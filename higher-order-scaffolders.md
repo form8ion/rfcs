@@ -6,13 +6,20 @@ Author: @travi
 
 ## Summary
 
-{{A concise, one-paragraph description of the change.}}
+Define a pattern for scaffolders that can follow a more rigid process than
+simple plugins, like package or application scaffolders. Because they solve a
+well defined problem, they are able to define answers to the generic questions
+provided by default in the [project-scaffolder](https://github.com/travi/project-scaffolder)
+or language scaffolders. These also need to define details commonly returned as
+results from the plugin/sub-scaffolders, like `dependencies`,
+`devDependencies`, `scripts`, and others.
 
 ## Motivation
 
-{{Why are we doing this? What pain points does this resolve? What use cases does
-it support? What is the expected outcome? Use real, concrete examples to make
-your case!}}
+* Further automate well-defined scenarios that have become repetitive
+* Enable orchestrating project scaffolding tasks at a higher level so that
+  larger tasks can be automated, like creating the initial projects to
+  bootstrap a new organization.
 
 ## Detailed Explanation
 
@@ -23,6 +30,9 @@ your case!}}
 {{Discuss 2-3 different alternative solutions that were considered. This is
 required, even if it seems like a stretch. Then explain why this is the best
 choice out of available ones.}}
+
+* Continue to build package/application plugins and manually answer prompts,
+  even if they are repetitive and error prone
 
 ## Implementation
 
@@ -46,5 +56,7 @@ not been answered.}}
 * higher-order scaffolder doesnt actually seem like an appropriate name for
   this. what would be more accurate? maybe i'm thinking more "high-level" than
   "higher-order"
+* should the approach to package/application plugins be reconsidered if this
+  approach is available?
 
 {{THIS SECTION SHOULD BE REMOVED BEFORE RATIFICATION}}
