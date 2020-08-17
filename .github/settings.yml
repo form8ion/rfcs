@@ -1,0 +1,8 @@
+_extends: .github
+repository:
+  name: rfcs
+  description: >-
+    Repository for managing Requests For Comments (RFCs) for the form8ion wuite
+    of tools
+  homepage: 'https://github.com/form8ion/rfcs#readme'
+  private: false
