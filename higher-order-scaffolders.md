@@ -23,7 +23,14 @@ results from the plugin/sub-scaffolders, like `dependencies`,
 
 ## Detailed Explanation
 
-{{Describe the expected changes in detail, }}
+Scaffolding some projects can be detailed enough to know the decisions that
+should be made related to the generic project prompts. With the current
+approach to enabling scaffolding of specific package/application projects
+through plugins, there is no way for the plugin to provide these decisions to
+the scaffolding workflow.
+
+The primary decision here is to enable decisions to be provided programatically
+while continuing to enable the behaviors available to plugins.
 
 ## Rationale and Alternatives
 
