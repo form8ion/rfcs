@@ -62,14 +62,24 @@ that result in executing the specific plugins.
 
 ## Implementation
 
-{{Give a high-level overview of implementation requirements and concerns. Be
-specific about areas of code that need to change, and what their potential
-effects are. Discuss which repositories and sub-components will be affected, and
-what its overall code effect might be.}}
+The high-level will call the [project-scaffolder](https://github.com/travi/project-scaffolder),
+passing the options that would normally be passed directly to the [project-scaffolder](https://github.com/travi/project-scaffolder),
+but enhanced with `decisions` that define the desired flow to accomplish the
+goals of the high-level scaffolder.
 
-{{THIS SECTION IS REQUIRED FOR RATIFICATION -- you can skip it if you don't know
-the technical details when first submitting the proposal, but it must be there
-before it's accepted}}
+For now, the high-level scaffolders will not be managed by another tool, but
+expected to be called directly by consumers. This will likely be a matter of
+calling the high-level scaffolder(s) directly from a sub-command of a cli. This
+could be a separate sub-command for each high-level scaffolder, but may be
+simpler as a chooser in an existing `scaffold` command, as a peer to executing
+the generic flow.
+
+While I'm not yet ready to build such a tool, this approach will also enable
+execution from a tool that calls multiple high-level scaffolders in a single
+command.
+
+There are likely still a handful of paths that need `decisions` to be passed to
+them, like [the package-type plugins](https://github.com/travi/javascript-scaffolder/blob/9eadb5f9134bf01763376a71a2357e5a5fe1e64f/src/project-type/package/scaffolder.js#L93).
 
 ## Unresolved Questions and Bikeshedding
 
