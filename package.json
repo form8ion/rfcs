@@ -16,7 +16,7 @@
     "lint:peer": "npm ls >/dev/null"
   },
   "devDependencies": {
-    "@form8ion/commitlint-config": "1.0.20",
+    "@form8ion/commitlint-config": "1.0.21",
     "@form8ion/remark-lint-preset": "2.1.5",
     "ban-sensitive-files": "1.9.16",
     "cz-conventional-changelog": "3.3.0",
