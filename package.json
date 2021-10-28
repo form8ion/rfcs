@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@form8ion/commitlint-config": "1.0.21",
-    "@form8ion/remark-lint-preset": "2.1.5",
+    "@form8ion/remark-lint-preset": "2.1.6",
     "ban-sensitive-files": "1.9.16",
     "cz-conventional-changelog": "3.3.0",
     "husky": "7.0.4",
