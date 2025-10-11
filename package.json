@@ -19,7 +19,7 @@
   "devDependencies": {
     "@form8ion/commitlint-config": "2.0.8",
     "@form8ion/remark-lint-preset": "6.0.7",
-    "ban-sensitive-files": "1.10.10",
+    "ban-sensitive-files": "1.10.11",
     "cz-conventional-changelog": "3.3.0",
     "husky": "9.1.7",
     "lockfile-lint": "4.14.1",
